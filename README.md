@@ -43,6 +43,25 @@ Designed specifically for Linux servers, VPSs, and Raspberry Pi / single-board c
 • ↑ Total TX: 4.80 GB
 
 🐳 Docker (3/3 Running):
+
+---
+
+## 1. Install System Dependencies
+
+Update package lists and install required tools:
+
+```bash
+# Update package lists
+sudo apt update
+
+# Install required core packages and tools
+sudo apt install -y curl jq vnstat vnstati gawk
+
+# Start and enable the vnstat bandwidth monitor daemon
+sudo systemctl enable --now vnstat
+
+# Verify vnstat service status
+sudo systemctl status vnstat --no-pager
 • web-app (Up 2d 4h)
 • postgres-db (Up 2d 4h)
 • redis-cache (Up 2d 4h)
