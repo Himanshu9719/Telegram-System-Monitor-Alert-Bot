@@ -160,11 +160,11 @@ sudo systemctl stop telemon.service
 # Disable service from starting on boot
 sudo systemctl disable telemon.service
 ```
-
 ## 7. Complete Uninstallation
 
 To completely remove all installed components and configs:
 
+```bash
 # Stop and disable the service
 sudo systemctl stop telemon.service
 sudo systemctl disable telemon.service
@@ -176,5 +176,4 @@ sudo rm -f /usr/local/bin/telemon.sh
 
 # Reload daemon registry
 sudo systemctl daemon-reload
-
-
+```
