@@ -72,7 +72,7 @@ Place the script in /usr/local/bin and set execution permissions:
 
 ```bash
 # Copy the script to the global binary directory
-sudo cp monitor.sh /usr/local/bin/telemon.sh
+sudo cp telemon.env /usr/local/bin/telemon.sh
 
 # Make the script executable
 sudo chmod +x /usr/local/bin/telemon.sh
@@ -151,7 +151,7 @@ journalctl -u telemon.service -f
 # View the last 50 log entries
 journalctl -u telemon.service -n 50 --no-pager
 
-# Restart the daemon (e.g., after editing monitor.sh or telemon.env)
+# Restart the daemon (e.g., after editing telemon.env)
 sudo systemctl restart telemon.service
 
 # Stop the daemon
